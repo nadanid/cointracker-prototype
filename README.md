@@ -27,7 +27,7 @@ cointracker-prototype/
 │   ├── components/                 # Reusable UI components
 │   │   ├── BitcoinAddress.tsx      # Component for adding/removing addresses
 │   ├── styles/                     # CSS styles
-│   │   │   ├── BitcoinAddress.css  # Main UI logic for displaying addresses
+│   │   │   ├── BitcoinAddress.css  # Main styling for displaying addresses
 │   ├── layout.tsx                  # Root layout
 │   ├── page.tsx                    # Main React app entry & logic for displaying addresses
 │
