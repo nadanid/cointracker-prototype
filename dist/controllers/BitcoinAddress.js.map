@@ -1,0 +1,1 @@
+{"version":3,"file":"BitcoinAddress.js","sourceRoot":"","sources":["../../src/controllers/BitcoinAddress.ts"],"names":[],"mappings":";;;;;;;;;;;AAEA,MAAM,cAAc;IAApB;QAEI,2BAAsB,GAAG,CAAM,OAAwB,EAAE,QAA0B,EAAC,EAAA;YAChF,IAAI,CAAC;gBACD,2BAA2B;YAC/B,CAAC;YAAC,OAAM,KAAK,EAAC,CAAC;YAEf,CAAC;QACL,CAAC,CAAA,CAAA;IACL,CAAC;CAAA"}
