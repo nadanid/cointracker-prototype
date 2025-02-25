@@ -14,10 +14,11 @@ This CoinTracker prototype allows users to add, remove, and track Bitcoin addres
 ✅ User-Friendly UI – A simple, clean, and interactive front-end for managing addresses.
 
 ## 📂 Project Structure
-coin-tracker-prototype/
+```
+cointracker-prototype/
 ├── src/                            # Express.js Backend
 │   ├── db/                         # Database models (Mongoose)
-│   │   ├── Wallet.ts        # Schema for Bitcoin wallets
+│   │   ├── Wallet.ts               # Schema for wallets
 │   │   ├── Transaction.ts          # Schema for transactions
 │   ├── syncTransactions.ts         # Function to sync transactions & balances
 │   ├── index.ts                    # Express server entry point
@@ -32,51 +33,55 @@ coin-tracker-prototype/
 │
 ├── package.json                   # Dependencies for frontend & backend
 ├── README.md                      # Project documentation
-
+```
 
 ## 🛠️ Technologies & Tools
 
 ### Frontend (React + TypeScript)
-•	React.js – Component-based UI development
-•	TypeScript – Type-safe JavaScript
-•	Axios – API calls to fetch BTC data
-•	CSS Modules – Styling for components
+*	React.js – Component-based UI development
+*	TypeScript – Type-safe JavaScript
+*	Axios – API calls to fetch BTC data
+*	CSS Modules – Styling for components
 
 ### Backend (Node.js + Express)
-•	Node.js – JavaScript runtime
-•	Express.js – Web framework for API endpoints
-•	Mongoose – ODM for MongoDB
-•	Axios – Fetch BTC data from Blockchain.com API
+*	Node.js – JavaScript runtime
+*	Express.js – Web framework for API endpoints
+*	Mongoose – ODM for MongoDB
+*	Axios – Fetch BTC data from Blockchain.com API
 
 #### Database (MongoDB)
-•	MongoDB Atlas – Cloud-hosted NoSQL database
-•	Mongoose – Schema validation & queries
+*	MongoDB Atlas – Cloud-hosted NoSQL database
+*	Mongoose – Schema validation & queries
 
 ## 🛠 DB Models
-The Wallet model stores a list of Bitcoin addresses that are being tracked, along with their balances.
-The Transaction model stores a list of transactions with their bitcoin addresses, txn id, amount and date. Model and db used to test
+* The Wallet model stores a list of Bitcoin addresses that are being tracked, along with their balances.
+* The Transaction model stores a list of transactions with their bitcoin addresses, txn id, amount and date. Model and db used to test
 syncing capabilities but is not optimal for solution
 
 ## 🚀️ Setup 
-Backend: npm run start 
+(assuming all dependencies have been installed)
 
-Frontend:  npm run frontend-dev
+Backend: ```npm run start```
+
+Frontend:  ```npm run frontend-dev```
 
 
 ## 🔗 API Endpoints
----- MAIN APIs ----
+### Main APIs
 
+```
 GET /wallet/:id - Retrieves Bitcoin addresses for a specific wallet by its ID
 POST /wallet - Creates a new wallet entry in the database
 PATCH /wallet/:id - Adds a new Bitcoin address to an existing wallet
 DELETE /wallet/:address - Deletes a specific Bitcoin address from a wallet
-
----- APIs USED FOR TESTING ----
+```
+### APIs for testing
+```
 GET /wallets - Retrieves a list of all wallets stored in the database
 GET /transactions/:address - Retrieves a list of transactions for bitcoin address
 DELETE /transactions - Deletes all transactions
 DELETE /wallets - Deletes all wallets
-
+```
 
 
 ## ℹ️ Important: 
